@@ -1,0 +1,11 @@
+[package]
+name = "enums"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }

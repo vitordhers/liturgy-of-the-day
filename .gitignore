@@ -1,0 +1,10 @@
+/dist/
+/target/
+/Cargo.lock
+node_modules/
+package-lock.json
+.idea/
+client/src/css/tailwind.css
+client/src/css/styles.css
+.vscode/
+cheat-sheets

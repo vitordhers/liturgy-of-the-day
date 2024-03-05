@@ -1,0 +1,59 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.metadata.scripts]
+leptos-fmt = "leptosfmt ./client/src/*.rs"
+serve-web-dev = "trunk serve"
+serve-desktop-dev = "cargo tauri dev"
+# cargo run-script leptos-fmt
+
+
+[workspace]
+members = ["src-tauri", "client"]
+resolver = "2"
+
+[workspace.package]
+name = "liturgy-of-the-word-ui"
+authors = ["Vitor Dhers"]
+description = "A cross-platform Suite for notifying the Liturgy of the day, using the LAST Stack"
+license = "GPL"
+edition = "2021"
+version = "0.0.0"
+
+[workspace.dependencies]
+wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+serde-wasm-bindgen = "0.6"
+console_error_panic_hook = "0.1.7"
+
+
+[workspace.dependencies.tauri]
+tauri = { version = "2.0.0-beta", features = [] }
+
+[workspace.dependencies.tauri-plugin-shell]
+tauri-plugin-shell = "2.0.0-beta"
+
+[workspace.dependencies.leptos]
+leptos = { version = "0.6.6", features = ["csr"] }
+
+[workspace.dependencies.leptos_meta]
+leptos-meta = { version = "0.6.6", features = ["csr"] }
+
+[workspace.dependencies.serde]
+serde = { version = "1", features = ["derive"] }
+
+[workspace.dependencies.serde_json]
+version = "1.0.105"
+
+[workspace.dependencies.config]
+path = "shared/config"
+
+[workspace.dependencies.gloo]
+version = "0.11.0"
+features = ["file", "futures"]
+
+[workspace.dependencies.enums]
+path = "shared/enums"
+
+
+[workspace.dependencies.utils]
+path = "shared/utils"

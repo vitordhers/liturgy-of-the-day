@@ -1,0 +1,1 @@
+A cross-platform Suite for notifying the Liturgy of the day, using the LAST Stack

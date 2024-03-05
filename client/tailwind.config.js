@@ -1,0 +1,143 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  mode: "jit",
+  content: [
+    "./css/*.{js,ts,jsx,tsx,css,scss,html}",
+    "./css/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,rs,scss,css,html}",
+    "./index.html",
+    "./src/main.rs",
+  ],
+  safelist: ["h-sm", "h-base", "h-lg", "h-xl", "h-2xl"],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
+  theme: {
+    fontFamily: {
+      //   sans: ["Open Sans", "Noto Color Emoji"],
+      //   display: ["Comfortaa", "Noto Color Emoji"],
+      //   mono: ["Fira Mono", "Noto Color Emoji"],
+    },
+    fontSize: {
+      sm: "0.875rem", // 14px
+      base: "1rem", // 16px
+      lg: "1.125rem", // 18px
+      xl: "1.25rem", // 20px
+      "2xl": "1.5rem", // 24px
+    },
+    extend: {
+      // Define custom utilities for SVG height and width based on font size
+      height: (theme) => ({
+        ...theme("fontSize"),
+      }),
+      width: (theme) => ({
+        ...theme("fontSize"),
+      }),
+    },
+  },
+  daisyui: {
+    themes: [
+      "light",
+      "dark",
+      {
+        green: {
+          primary: "#19a026",
+          "primary-content": "#88ed91",
+          secondary: "#19a026",
+          "secondary-content": "#fff",
+          accent: "#186420",
+          neutral: "#186420",
+          "base-100": "#ddfbdf",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        purple: {
+          primary: "#ad00b1",
+          secondary: "#800080",
+          accent: "#620063",
+          neutral: "#800080",
+          "base-100": "#ffe1fe",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        rose: {
+          primary: "#d9296f",
+          secondary: "#bc1a56",
+          accent: "#82193e",
+          neutral: "#f485ba",
+          "base-100": "#fce7f2",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        gold: {
+          primary: "#dfc865",
+          secondary: "#c59b2d",
+          accent: "#aa7a24",
+          neutral: "#d4af37",
+          "base-100": "#f4f0cd",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        red: {
+          primary: "#ff9999",
+          secondary: "#ff5f5f",
+          accent: "#aa0a0a",
+          neutral: "#f50d0d",
+          "base-100": "#ffdede",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        black: {
+          primary: "#5d5d5d",
+          secondary: "#3d3d3d",
+          accent: "#191919",
+          neutral: "#191919",
+          "base-100": "#d1d1d1",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        blue: {
+          primary: "#0c83d7",
+          secondary: "#0258a2",
+          accent: "#0c406e",
+          neutral: "#0c83d7",
+          "base-100": "#e0effe",
+          info: "#4169e1",
+          success: "#B9FF66",
+          warning: "#e9d543",
+          error: "#ff4500",
+        },
+        // rustytube: {
+        //   primary: "#0072ff",
+        //   "primary-content": "#F4F5F6",
+        //   secondary: "#7cb7ff",
+        //   "secondary-content": "#F4F5F6",
+        //   accent: "#F471B5",
+        //   "accent-content": "#F4F5F6",
+        //   neutral: "#828385",
+        //   "neutral-content": "#F4F5F6",
+        //   "base-100": "#191a1f",
+        //   "base-content": "#F4F5F6",
+        //   info: "#7cb7ff",
+        //   "info-content": "#101013",
+        //   success: "#0096b1",
+        //   "success-content": "#101013",
+        //   warning: "#cc5500",
+        //   "warning-content": "#101013",
+        //   error: "#e6133e",
+        //   "error-content": "#101013",
+        // },
+      },
+    ],
+  },
+};
