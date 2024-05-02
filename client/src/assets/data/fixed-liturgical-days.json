@@ -1,0 +1,1502 @@
+// pub enum LiturgicalColor {
+// 0   WhiteOrGold,
+// 1   Red,
+// 2   Violet,
+// 3   Green,
+// 4   Rose,
+// 5   Black,
+// 6   Blue,
+// }
+
+// enum CelebrationType {
+// 0   None,
+// 1   OptionalCommemoration, *m
+// 2   OptionalMemorial, m
+// 3   Memorial, M
+// 4   Feast, F
+// 5   Solemnity, S
+// }
+
+[
+  {
+    "day": 1,
+    "month": 1,
+    "name": "Solemnity of The Blessed Virgin Mary, the Holy Mother of God",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 2,
+    "month": 1,
+    "name": "Saint Basil the Great and Saint Gregory Nazianzen, bishops and doctors of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 3,
+    "month": 1,
+    "name": "The Most Holy Name of Jesus",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 7,
+    "month": 1,
+    "name": "Saint Raymond of Penyafort, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 13,
+    "month": 1,
+    "name": "Saint Hilary, bishop and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 17,
+    "month": 1,
+    "name": "Saint Anthony, abbot",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 20,
+    "month": 1,
+    "name": "Saint Fabian, pope and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 20,
+    "month": 1,
+    "name": "Saint Sebastian, martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 21,
+    "month": 1,
+    "name": "Saint Agnes, virgin and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 1,
+    "name": "Saint Vincent, deacon and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 1,
+    "name": "Saint Francis de Sales, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 25,
+    "month": 1,
+    "name": "The Conversion of Saint Paul, Apostle",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 26,
+    "month": 1,
+    "name": "Saint Timothy and Saint Titus, bishops",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 27,
+    "month": 1,
+    "name": "Saint Angela Merici, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 28,
+    "month": 1,
+    "name": "Saint Thomas Aquinas, priest and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 31,
+    "month": 1,
+    "name": "Saint John Bosco, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 2,
+    "month": 2,
+    "name": "The Presentation of The Lord",
+    "color": 0,
+    "type": 4
+  },
+  // ask in The Church what color takes precedence is cases like that
+  {
+    "day": 3,
+    "month": 2,
+    "name": "Saint Ansgar, bishop",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 3,
+    "month": 2,
+    "name": "Saint Blase, bishop and martyr",
+    "color": 1,
+    "type": 3
+  },
+  // The earliest date Ash Wednesday can occur - Feb, 4th
+  {
+    "day": 6,
+    "month": 2,
+    "name": "Saint Paul Miki and companions, martyrs",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 8,
+    "month": 2,
+    "name": "Saint Jerome Emiliani, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 8,
+    "month": 2,
+    "name": "Saint Josephine Bakhita, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 10,
+    "month": 2,
+    "name": "Saint Scholastica, virgin",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 11,
+    "month": 2,
+    "name": "Our Lady of Lourdes",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 17,
+    "month": 2,
+    "name": "The Seven Founders of the Order of Servites, religious",
+    "color": 0,
+    "type": 1
+  },
+  {
+    "day": 21,
+    "month": 2,
+    "name": "Saint Peter Damian, bishop and doctor of the Church",
+    "color": 0,
+    "type": 1
+  },
+  {
+    "day": 22,
+    "month": 2,
+    "name": "The Chair of Saint Peter, Apostle",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 23,
+    "month": 2,
+    "name": "Saint Polycarp, bishop and martyr",
+    "color": 1,
+    "type": 1
+  },
+  {
+    "day": 27,
+    "month": 2,
+    "name": "Saint Gregory of Narek, abbot and doctor of the Church",
+    "color": 0,
+    "type": 1
+  },
+  {
+    "day": 4,
+    "month": 3,
+    "name": "Saint Casimir",
+    "color": 0,
+    "type": 1
+  },
+  {
+    "day": 8,
+    "month": 3,
+    "name": "Saint John of God, religious",
+    "color": 0,
+    "type": 1
+  },
+  {
+    "day": 9,
+    "month": 3,
+    "name": "Saint Frances of Rome, religious",
+    "color": 0, // only if outside lent
+    "type": 1
+  },
+  // The latest date Ash Wednesday can occur - Mar, 10th
+  {
+    "day": 17,
+    "month": 3,
+    "name": "Saint Patrick, bishop",
+    "color": 2, // always will fall in Lenten season
+    "type": 1
+  },
+  {
+    "day": 18,
+    "month": 3,
+    "name": "Saint Cyril of Jerusalem, bishop and doctor of the Church",
+    "color": 2, // always will fall in Lenten season
+    "type": 1
+  },
+  // The earliest Lenten Season may end
+  {
+    "day": 19,
+    "month": 3,
+    "name": "Saint Joseph, Husband of The Virgin Mary",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 23,
+    "month": 3,
+    "name": "Saint Turibius de Mongrovejo, bishop",
+    "color": 2, // if the Lenten Season finishes at it's earliest, then this day would fall upon Monday in The Octave of Easter, then this date should not be celebrated
+    "type": 1
+  },
+  {
+    "day": 25,
+    "month": 3,
+    "name": "The Annunciation of the Lord", // ask in The Church why is it going to be Apr 8th this year
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 2,
+    "month": 4,
+    "name": "Saint Francis of Paola, hermit",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 11,
+    "month": 4,
+    "name": "Saint Stanislaus, bishop and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 13,
+    "month": 4,
+    "name": "Saint Martin I, pope and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 23,
+    "month": 4,
+    "name": "Saint Adalbert, bishop and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 23,
+    "month": 4,
+    "name": "Saint George, martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 4,
+    "name": "Saint Fidelis of Sigmaringen, priest and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 4,
+    "name": "Saint Mark, Evangelist",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 28,
+    "month": 4,
+    "name": "Saint Louis Grignion de Montfort, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 28,
+    "month": 4,
+    "name": "Saint Peter Chanel, priest and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 29,
+    "month": 4,
+    "name": "Saint Catherine of Siena, virgin and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 30,
+    "month": 4,
+    "name": "Saint Pius V, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 1,
+    "month": 5,
+    "name": "Saint Joseph the Worker",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 2,
+    "month": 5,
+    "name": "Saint Athanasius, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 3,
+    "month": 5,
+    "name": "Saint Philip and Saint James, apostles",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 10,
+    "month": 5,
+    "name": "Saint John of Avila, priest and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 12,
+    "month": 5,
+    "name": "Saint Nereus and Saint Achilleus, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 12,
+    "month": 5,
+    "name": "Saint Pancras, martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 13,
+    "month": 5,
+    "name": "Our Lady of Fatima",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 14,
+    "month": 5,
+    "name": "Saint Matthias, Apostle",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 18,
+    "month": 5,
+    "name": "Saint John I, pope and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 21,
+    "month": 5,
+    "name": "Saint Christopher Magallanes, priest, and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 5,
+    "name": "Saint Rita of Cassia, religious",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 5,
+    "name": "Saint Bede the Venerable, priest and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 5,
+    "name": "Saint Gregory VII, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 5,
+    "name": "Saint Mary Magdalene de Pazzi, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 26,
+    "month": 5,
+    "name": "Saint Philip Neri, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 27,
+    "month": 5,
+    "name": "Saint Augustine of Canterbury, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 29,
+    "month": 5,
+    "name": "Saint Paul VI, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 31,
+    "month": 5,
+    "name": "The Visitation of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 1,
+    "month": 6,
+    "name": "Saint Justin, martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 2,
+    "month": 6,
+    "name": "Saint Marcellinus and Saint Peter, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 3,
+    "month": 6,
+    "name": "Saint Charles Lwanga and companions, martyrs",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 5,
+    "month": 6,
+    "name": "Saint Boniface, bishop and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 6,
+    "month": 6,
+    "name": "Saint Norbert, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 9,
+    "month": 6,
+    "name": "Saint Ephrem, deacon and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 11,
+    "month": 6,
+    "name": "Saint Barnabas, apostle",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 13,
+    "month": 6,
+    "name": "Saint Anthony of Padua, priest and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 19,
+    "month": 6,
+    "name": "Saint Romuald, abbot",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 21,
+    "month": 6,
+    "name": "Saint Aloysius Gonzaga, religious",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 6,
+    "name": "Saint John Fisher, bishop, and Saint Thomas More, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 6,
+    "name": "Saint Paulinus of Nola, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 6,
+    "name": "The Nativity of Saint John the Baptist",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 27,
+    "month": 6,
+    "name": "Saint Cyril of Alexandria, bishop and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 28,
+    "month": 6,
+    "name": "Saint Irenaeus, bishop, martyr and doctor of the Church",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 29,
+    "month": 6,
+    "name": "Saint Peter and Saint Paul, apostles",
+    "color": 1,
+    "type": 5
+  },
+  {
+    "day": 30,
+    "month": 6,
+    "name": "The First Martyrs of the Church of Rome",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 3,
+    "month": 7,
+    "name": "Saint Thomas, apostle",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 4,
+    "month": 7,
+    "name": "Saint Elizabeth of Portugal",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 5,
+    "month": 7,
+    "name": "Saint Anthony Mary Zaccaria, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 6,
+    "month": 7,
+    "name": "Saint Maria Goretti, virgin and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 9,
+    "month": 7,
+    "name": "Saint Augustine Zhao Rong, priest, and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 13,
+    "month": 7,
+    "name": "Saint Henry",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 14,
+    "month": 7,
+    "name": "Saint Camillus de Lellis, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 15,
+    "month": 7,
+    "name": "Saint Bonaventure, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 16,
+    "month": 7,
+    "name": "Our Lady of Mount Carmel",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 20,
+    "month": 7,
+    "name": "Saint Apollinaris, bishop and martyr",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 21,
+    "month": 7,
+    "name": "Saint Lawrence of Brindisi, priest and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 7,
+    "name": "Saint Mary Magdalene",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 23,
+    "month": 7,
+    "name": "Saint Bridget, religious",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 7,
+    "name": "Saint Sharbel Makhluf, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 7,
+    "name": "Saint James, apostle",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 26,
+    "month": 7,
+    "name": "Saint Joachim and Saint Anne, parents of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 29,
+    "month": 7,
+    "name": "Saint Martha, Saint Mary and Saint Lazarus",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 30,
+    "month": 7,
+    "name": "Saint Peter Chrysologus, bishop and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 31,
+    "month": 7,
+    "name": "Saint Ignatius of Loyola, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 1,
+    "month": 8,
+    "name": "Saint Alphonsus Liguori, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 2,
+    "month": 8,
+    "name": "Saint Eusebius of Vercelli, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 2,
+    "month": 8,
+    "name": "Saint Peter Julian Eymard, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 4,
+    "month": 8,
+    "name": "Saint John Vianney, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 5,
+    "month": 8,
+    "name": "The Dedication of the Basilica of Saint Mary Major in Rome",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 6,
+    "month": 8,
+    "name": "The Transfiguration of the Lord",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 7,
+    "month": 8,
+    "name": "Saint Cajetan, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 7,
+    "month": 8,
+    "name": "Saint Sixtus II, pope, and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 8,
+    "month": 8,
+    "name": "Saint Dominic, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 9,
+    "month": 8,
+    "name": "Saint Teresa Benedicta of the Cross, virgin and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 10,
+    "month": 8,
+    "name": "Saint Lawrence, deacon and martyr",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 11,
+    "month": 8,
+    "name": "Saint Clare, virgin",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 12,
+    "month": 8,
+    "name": "Saint Jane Frances de Chantal, religious",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 13,
+    "month": 8,
+    "name": "Saint Pontian, pope, and Saint Hippolytus, priest, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 14,
+    "month": 8,
+    "name": "Saint Maximilian Kolbe, priest and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 15,
+    "month": 8,
+    "name": "The Assumption of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 16,
+    "month": 8,
+    "name": "Saint Stephen of Hungary",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 19,
+    "month": 8,
+    "name": "Saint John Eudes, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 20,
+    "month": 8,
+    "name": "Saint Bernard, abbot and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 21,
+    "month": 8,
+    "name": "Saint Pius X, pope",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 22,
+    "month": 8,
+    "name": "The Queenship of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 23,
+    "month": 8,
+    "name": "Saint Rose of Lima, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 8,
+    "name": "Saint Bartholomew, apostle",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 25,
+    "month": 8,
+    "name": "Saint Joseph Calasanz, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 25,
+    "month": 8,
+    "name": "Saint Louis",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 27,
+    "month": 8,
+    "name": "Saint Monica",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 28,
+    "month": 8,
+    "name": "Saint Monica",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 29,
+    "month": 8,
+    "name": "The Passion of Saint John the Baptist, martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 3,
+    "month": 9,
+    "name": "Saint Gregory the Great, pope and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 8,
+    "month": 9,
+    "name": "The Nativity of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 9,
+    "month": 9,
+    "name": "Saint Peter Claver, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 12,
+    "month": 9,
+    "name": "The Most Holy Name of Mary",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 13,
+    "month": 9,
+    "name": "Saint John Chrysostom, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 14,
+    "month": 9,
+    "name": "The Exaltation of the Holy Cross",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 15,
+    "month": 9,
+    "name": "Our Lady of Sorrows",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 16,
+    "month": 9,
+    "name": "Saint Cornelius, pope, and Saint Cyprian, bishop, martyrs",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 17,
+    "month": 9,
+    "name": "Saint Hildegard of Bingen, virgin and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 16,
+    "month": 9,
+    "name": "Saint Robert Bellarmine, bishop and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 19,
+    "month": 9,
+    "name": "Saint Januarius, bishop and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 20,
+    "month": 9,
+    "name": "Saint Andrew Kim Taegŏn, priest, Saint Paul Chŏng Hasang and companions, martyrs",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 20,
+    "month": 9,
+    "name": "Saint Matthew, apostle and evangelist",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 23,
+    "month": 9,
+    "name": "Saint Pius of Pietrelcina, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 26,
+    "month": 9,
+    "name": "Saint Cosmas and Saint Damian, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 27,
+    "month": 9,
+    "name": "Saint Vincent de Paul, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 28,
+    "month": 9,
+    "name": "Saint Lawrence Ruiz and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 28,
+    "month": 9,
+    "name": "Saint Wenceslaus, martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 29,
+    "month": 9,
+    "name": "Saint Michael, Saint Gabriel, and Saint Raphael, archangels",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 30,
+    "month": 9,
+    "name": "Saint Jerome, priest and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 1,
+    "month": 10,
+    "name": "Saint Thérèse of the Child Jesus, virgin and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 2,
+    "month": 10,
+    "name": "The Holy Guardian Angels",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 4,
+    "month": 10,
+    "name": "Saint Francis of Assisi, religious",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 5,
+    "month": 10,
+    "name": "Saint Faustina Kowalska, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 6,
+    "month": 10,
+    "name": "Saint Bruno, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 7,
+    "month": 10,
+    "name": "Our Lady of the Rosary",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 9,
+    "month": 10,
+    "name": "Saint Denis, bishop, and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 9,
+    "month": 10,
+    "name": "Saint John Leonardi, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 11,
+    "month": 10,
+    "name": "Saint John XXIII, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 12,
+    "month": 10,
+    "name": "Our Lady of Aparecida",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 14,
+    "month": 10,
+    "name": "Saint Callistus I, pope and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 15,
+    "month": 10,
+    "name": "Saint Teresa of Jesus, virgin and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 16,
+    "month": 10,
+    "name": "Saint Hedwig, religious",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 16,
+    "month": 10,
+    "name": "Saint Margaret Mary Alacoque, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 17,
+    "month": 10,
+    "name": "Saint Ignatius of Antioch, bishop and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 18,
+    "month": 10,
+    "name": "Saint Luke, evangelist",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 19,
+    "month": 10,
+    "name": "Saint John de Brébeuf, Saint Isaac Jogues, priests, and companions, martyrs",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 19,
+    "month": 10,
+    "name": "Saint Paul of the Cross, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 22,
+    "month": 10,
+    "name": "Saint John Paul II, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 23,
+    "month": 10,
+    "name": "Saint John of Capistrano, priest",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 10,
+    "name": "Saint Anthony Mary Claret, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 28,
+    "month": 10,
+    "name": "Saint Simon and Saint Jude, apostles",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 1,
+    "month": 11,
+    "name": "All Saints",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 2,
+    "month": 11,
+    "name": "The Commemoration of all the Faithful Departed (All Souls)",
+    "color": 5,
+    "type": 0
+  },
+  {
+    "day": 3,
+    "month": 11,
+    "name": "Saint Martin de Porres, religious",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 4,
+    "month": 11,
+    "name": "Saint Charles Borromeo, bishop",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 9,
+    "month": 11,
+    "name": "The Dedication of the Lateran Basilica in Rome",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 10,
+    "month": 11,
+    "name": "Saint Leo the Great, pope and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 11,
+    "month": 11,
+    "name": "Saint Martin of Tours, bishop",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 12,
+    "month": 11,
+    "name": "Saint Josaphat, bishop and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 15,
+    "month": 11,
+    "name": "Saint Albert the Great, bishop and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 16,
+    "month": 11,
+    "name": "Saint Gertrude, virgin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 16,
+    "month": 11,
+    "name": "Saint Margaret of Scotland",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 17,
+    "month": 11,
+    "name": "Saint Elizabeth of Hungary, religious",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 18,
+    "month": 11,
+    "name": "The Dedication of the Basilicas of Saint Peter and Saint Paul in Rome, apostles",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 21,
+    "month": 11,
+    "name": "The Presentation of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 22,
+    "month": 11,
+    "name": "Saint Cecilia, virgin and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 23,
+    "month": 11,
+    "name": "Saint Clement I, pope and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 23,
+    "month": 11,
+    "name": "Saint Columban, abbot",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 24,
+    "month": 11,
+    "name": "Saint Andrew Dung-Lac, priest, and companions, martyrs",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 25,
+    "month": 11,
+    "name": "Saint Catherine of Alexandria, virgin and martyr",
+    "color": 1,
+    "type": 2
+  },
+  {
+    "day": 30,
+    "month": 11,
+    "name": "Saint Andrew, apostle",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 3,
+    "month": 12,
+    "name": "Saint Francis Xavier, priest",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 4,
+    "month": 12,
+    "name": "Saint John Damascene, priest and doctor of the Church",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 6,
+    "month": 12,
+    "name": "Saint Nicholas, bishop",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 7,
+    "month": 12,
+    "name": "Saint Ambrose, bishop and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 8,
+    "month": 12,
+    "name": "The Immaculate Conception of the Blessed Virgin Mary",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 9,
+    "month": 12,
+    "name": "Saint Juan Diego Cuauhtlatoatzin",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 10,
+    "month": 12,
+    "name": "Our Lady of Loreto",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 11,
+    "month": 12,
+    "name": "Saint Damasus I, pope",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 12,
+    "month": 12,
+    "name": "Our Lady of Guadalupe",
+    "color": 0,
+    "type": 2
+  },
+  {
+    "day": 13,
+    "month": 12,
+    "name": "Saint Lucy, virgin and martyr",
+    "color": 1,
+    "type": 3
+  },
+  {
+    "day": 14,
+    "month": 12,
+    "name": "Saint John of the Cross, priest and doctor of the Church",
+    "color": 0,
+    "type": 3
+  },
+  {
+    "day": 21,
+    "month": 12,
+    "name": "Saint Peter Canisius, priest and doctor of the Church",
+    "color": 2,
+    "type": 1
+  },
+  {
+    "day": 23,
+    "month": 12,
+    "name": "Saint John of Kanty, priest",
+    "color": 2,
+    "type": 1
+  },
+  {
+    "day": 25,
+    "month": 12,
+    "name": "The Nativity of the Lord (Christmas)",
+    "color": 0,
+    "type": 5
+  },
+  {
+    "day": 26,
+    "month": 12,
+    "name": "Saint Stephen, first martyr",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 27,
+    "month": 12,
+    "name": "Saint John, apostle and evangelist",
+    "color": 0,
+    "type": 4
+  },
+  {
+    "day": 28,
+    "month": 12,
+    "name": "The Holy Innocents, martyrs",
+    "color": 1,
+    "type": 4
+  },
+  {
+    "day": 29,
+    "month": 12,
+    "name": "Saint Thomas Becket, bishop and martyr",
+    "color": 0, // ask The Church
+    "type": 1
+  },
+  {
+    "day": 31,
+    "month": 12,
+    "name": "Saint Sylvester I, pope",
+    "color": 0,
+    "type": 1
+  }
+]

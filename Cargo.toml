@@ -8,7 +8,7 @@ serve-desktop-dev = "cargo tauri dev"
 
 [workspace]
 members = ["src-tauri", "client"]
-resolver = "2"
+resolver = "1"
 
 [workspace.package]
 name = "liturgy-of-the-word-ui"
@@ -24,6 +24,8 @@ wasm-bindgen-futures = "0.4"
 js-sys = "0.3"
 serde-wasm-bindgen = "0.6"
 console_error_panic_hook = "0.1.7"
+leptos = { version = "0.6.9", features = ["csr"] }
+chrono = "0.4.34"
 
 
 [workspace.dependencies.tauri]
@@ -32,17 +34,15 @@ tauri = { version = "2.0.0-beta", features = [] }
 [workspace.dependencies.tauri-plugin-shell]
 tauri-plugin-shell = "2.0.0-beta"
 
-[workspace.dependencies.leptos]
-leptos = { version = "0.6.6", features = ["csr"] }
 
 [workspace.dependencies.leptos_meta]
-leptos-meta = { version = "0.6.6", features = ["csr"] }
+leptos-meta = { version = "0.6.9", features = ["csr"] }
 
 [workspace.dependencies.serde]
-serde = { version = "1", features = ["derive"] }
+serde = { version = "1.0.197", features = ["derive"] }
 
 [workspace.dependencies.serde_json]
-version = "1.0.105"
+version = "1.0.114"
 
 [workspace.dependencies.config]
 path = "shared/config"

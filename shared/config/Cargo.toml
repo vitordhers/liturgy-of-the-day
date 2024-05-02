@@ -10,3 +10,4 @@ edition.workspace = true
 serde = { workspace = true }
 serde_json = { workspace = true }
 enums = { workspace = true }
+chrono = { workspace = true }
