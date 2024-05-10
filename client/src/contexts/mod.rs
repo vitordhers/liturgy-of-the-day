@@ -1,3 +1,3 @@
 mod config;
 
-pub use config::{provide_config_context_slices, ThemeCtx};
+pub use config::{provide_config_context_slices, ThemeCtx, PlatformConfigCtx, LocaleConfigCtx};

@@ -4,7 +4,7 @@ module.exports = {
   content: [
     "./css/*.{js,ts,jsx,tsx,css,scss,html}",
     "./css/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx,rs,scss,css,html}",
+    "./src/**/*.{js,ts,jsx,tsx,rs,scss,css,html,rs}",
     "./index.html",
     "./src/main.rs",
   ],

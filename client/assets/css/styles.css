@@ -1,0 +1,14 @@
+@import url(./tailwind.css);
+
+svg.icon {
+  fill: currentColor;
+}
+
+.tab {
+  transition: background-color 400ms ease-in-out;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}

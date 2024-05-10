@@ -1,15 +1,101 @@
 use serde::{Deserialize, Serialize};
+use strum_macros::{EnumIter, EnumString, Display };
 
 #[derive(Clone, Copy, Deserialize, Serialize, Debug, PartialEq)]
 pub enum LiturgicalColor {
     Green,
     Violet,
-    Rose,
     Blue,
     WhiteOrGold,
     Red,
     Black,
 }
+
+#[derive(Clone, Copy, Deserialize, Serialize, Debug, PartialEq, EnumString, EnumIter, Display)]
+pub enum Timezone {
+    #[strum(serialize = "GMT-12")]
+    UTCm12,
+    #[strum(serialize = "GMT-11")]
+    UTCm11,
+    #[strum(serialize = "GMT-10")]
+    UTCm10,
+    #[strum(serialize = "GMT-9")]
+    UTCm9,
+    #[strum(serialize = "GMT-8")]
+    UTCm8,
+    #[strum(serialize = "GMT-7")]
+    UTCm7,
+    #[strum(serialize = "GMT-6")]
+    UTCm6,
+    #[strum(serialize = "GMT-5")]
+    UTCm5,
+    #[strum(serialize = "GMT-4")]
+    UTCm4,
+    #[strum(serialize = "GMT-3")]
+    UTCm3,
+    #[strum(serialize = "GMT-2")]
+    UTCm2,
+    #[strum(serialize = "GMT-1")]
+    UTCm1,
+    #[strum(serialize = "UTC")]
+    UTC,
+    #[strum(serialize = "GMT+1")]
+    UTCp1,
+    #[strum(serialize = "GMT+2")]
+    UTCp2,
+    #[strum(serialize = "GMT+3")]
+    UTCp3,
+    #[strum(serialize = "GMT+4")]
+    UTCp4,
+    #[strum(serialize = "GMT+5")]
+    UTCp5,
+    #[strum(serialize = "GMT+6")]
+    UTCp6,
+    #[strum(serialize = "GMT+7")]
+    UTCp7,
+    #[strum(serialize = "GMT+8")]
+    UTCp8,
+    #[strum(serialize = "GMT+9")]
+    UTCp9,
+    #[strum(serialize = "GMT+10")]
+    UTCp10,
+    #[strum(serialize = "GMT+11")]
+    UTCp11,
+    #[strum(serialize = "GMT+12")]
+    UTCp12,
+}
+
+// impl Display for Timezone {
+//     fn fmt(&self, f: &mut Formatter<'_>) -> FmtResult {
+//         match self {
+//             Timezone::UTCm12 => write!(f, "GMT-12"),
+//             Timezone::UTCm11 => write!(f, "GMT-11"),
+//             Timezone::UTCm10 => write!(f, "GMT-10"),
+//             Timezone::UTCm9 => write!(f, "GMT-9"),
+//             Timezone::UTCm8 => write!(f, "GMT-8"),
+//             Timezone::UTCm7 => write!(f, "GMT-7"),
+//             Timezone::UTCm6 => write!(f, "GMT-6"),
+//             Timezone::UTCm5 => write!(f, "GMT-5"),
+//             Timezone::UTCm4 => write!(f, "GMT-4"),
+//             Timezone::UTCm3 => write!(f, "GMT-3"),
+//             Timezone::UTCm2 => write!(f, "GMT-2"),
+//             Timezone::UTCm1 => write!(f, "GMT-1"),
+//             Timezone::UTC => write!(f, "UTC"),
+//             Timezone::UTCp1 => write!(f, "GMT+1"),
+//             Timezone::UTCp2 => write!(f, "GMT+2"),
+//             Timezone::UTCp3 => write!(f, "GMT+3"),
+//             Timezone::UTCp4 => write!(f, "GMT+4"),
+//             Timezone::UTCp5 => write!(f, "GMT+5"),
+//             Timezone::UTCp6 => write!(f, "GMT+6"),
+//             Timezone::UTCp7 => write!(f, "GMT+7"),
+//             Timezone::UTCp8 => write!(f, "GMT+8"),
+//             Timezone::UTCp9 => write!(f, "GMT+9"),
+//             Timezone::UTCp10 => write!(f, "GMT+10"),
+//             Timezone::UTCp11 => write!(f, "GMT+11"),
+//             Timezone::UTCp12 => write!(f, "GMT+12"),
+//         }
+//     }
+// }
 
 #[derive(Clone, Copy, Deserialize, Serialize, Debug, PartialEq)]
 pub enum Month {
@@ -71,6 +157,9 @@ impl TryFrom<u32> for Month {
 pub enum IconInput {
     Bible,
     Church,
+    Gear,
+    Bell,
+    Shop,
 }
 
 pub enum FontSize {

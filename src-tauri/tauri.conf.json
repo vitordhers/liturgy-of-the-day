@@ -1,22 +1,22 @@
 {
-  "productName": "liturgy-of-the-word",
+  "productName": "liturgy-of-the-day",
   "version": "0.0.0",
   "identifier": "com.tauri.dev",
   "build": {
     "beforeDevCommand": "trunk serve",
     "devUrl": "http://localhost:1777",
     "beforeBuildCommand": "trunk build",
-    "frontendDist": "../dist"
+    "frontendDist": "../csr/dist"
   },
   "app": {
     "withGlobalTauri": true,
     "windows": [
       {
         "title": "🐑📖🙏 Liturgia da Palavra ✝️✨🕊️",
+        "width": 1440,
+        "height": 900,
         "fullscreen": false,
-        "height": 1000,
-        "resizable": true,
-        "width": 1200
+        "resizable": true
       }
     ],
     "security": {

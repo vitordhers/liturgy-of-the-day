@@ -1,17 +1,9 @@
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-[workspace.metadata.scripts]
-leptos-fmt = "leptosfmt ./client/src/*.rs"
-serve-web-dev = "trunk serve"
-serve-desktop-dev = "cargo tauri dev"
-# cargo run-script leptos-fmt
-
-
 [workspace]
-members = ["src-tauri", "client"]
+members = ["src-tauri", "ssr", "csr"]
 resolver = "1"
 
 [workspace.package]
-name = "liturgy-of-the-word-ui"
+name = "liturgy-of-the-day"
 authors = ["Vitor Dhers"]
 description = "A cross-platform Suite for notifying the Liturgy of the day, using the LAST Stack"
 license = "GPL"
@@ -19,13 +11,16 @@ edition = "2021"
 version = "0.0.0"
 
 [workspace.dependencies]
-wasm-bindgen = { version = "0.2.91", features = ["serde-serialize"] }
-wasm-bindgen-futures = "0.4"
+wasm-bindgen = { version = "0.2.92", features = ["serde-serialize"] }
+wasm-bindgen-futures = { version = "0.4" }
 js-sys = "0.3"
 serde-wasm-bindgen = "0.6"
 console_error_panic_hook = "0.1.7"
-leptos = { version = "0.6.9", features = ["csr"] }
 chrono = "0.4.34"
+leptos = { version = "0.6.11", features = [] }
+leptos_meta = { version = "0.6.11", features = [] }
+leptos_router = { version = "0.6.11", features = [] }
+leptos_i18n = { version = "0.3.3" }
 
 
 [workspace.dependencies.tauri]
@@ -35,25 +30,36 @@ tauri = { version = "2.0.0-beta", features = [] }
 tauri-plugin-shell = "2.0.0-beta"
 
 
-[workspace.dependencies.leptos_meta]
-leptos-meta = { version = "0.6.9", features = ["csr"] }
-
 [workspace.dependencies.serde]
 serde = { version = "1.0.197", features = ["derive"] }
 
 [workspace.dependencies.serde_json]
 version = "1.0.114"
 
-[workspace.dependencies.config]
-path = "shared/config"
-
 [workspace.dependencies.gloo]
 version = "0.11.0"
 features = ["file", "futures"]
 
+[workspace.dependencies.client]
+path = "client"
+
+[workspace.dependencies.config]
+path = "shared/config"
+
+[workspace.dependencies.structs]
+path = "shared/structs"
+
 [workspace.dependencies.enums]
 path = "shared/enums"
 
-
 [workspace.dependencies.utils]
 path = "shared/utils"
+
+[workspace.dependencies.liturgy_of_the_day_error]
+path = "shared/error"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.metadata.scripts]
+leptos-fmt = "leptosfmt ./client/src/*.rs"
+serve-web-dev = "trunk serve"
+serve-desktop-dev = "cargo tauri dev"

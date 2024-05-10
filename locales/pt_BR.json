@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "home": "Início",
+    "settings": "Configurações"
+  },
+  "common": {
+    "select_one": "Selecionar"
+  },
+  "set_locale": "🇧🇷 Português (Brasil)",
+  "settings": {
+    "settings": "Configurações",
+    "locale_settings": "🌎 Configurações de Localização",
+    "select_language": "👅 Escolha o idioma",
+    "select_timezone": "🌐 Escolha o fuso horário"
+  }
+}

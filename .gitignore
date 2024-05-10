@@ -8,3 +8,4 @@ client/src/css/tailwind.css
 client/src/css/styles.css
 .vscode/
 cheat-sheets
+csr/dist

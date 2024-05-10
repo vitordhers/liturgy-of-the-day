@@ -1,13 +1,13 @@
 {
-  "name": "liturgy-of-the-word",
+  "name": "Liturgy of the Day",
   "version": "1.0.0",
-  "description": "Lirutgy of the Day App",
+  "description": "Liturgy of the Day",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "tailwind:build": "npx tailwindcss -i ./src/css/tailwind-input.css -o ./src/css/tailwind.css",
-    "styles:build": "npx sass --no-source-map ./src/css/styles.scss ./src/css/styles.css",
-    "styles:build:watch": "npx sass --watch --no-source-map ./src/css/styles.scss ./src/css/styles.css"
+    "tailwind:build": "npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind.css",
+    "styles:build": "npx sass --no-source-map ./assets/css/styles.scss ./assets/css/styles.css",
+    "styles:build:watch": "npx sass --watch --no-source-map ./assets/css/styles.scss ./assets/css/styles.css"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",

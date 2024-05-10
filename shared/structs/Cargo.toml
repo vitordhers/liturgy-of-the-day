@@ -1,5 +1,5 @@
 [package]
-name = "enums"
+name = "structs"
 version.workspace = true
 authors.workspace = true
 description.workspace = true
@@ -7,6 +7,7 @@ license.workspace = true
 edition.workspace = true
 
 [dependencies]
+leptos = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 strum = { version = "0.26.2" }

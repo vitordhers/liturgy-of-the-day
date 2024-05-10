@@ -1,10 +1,5 @@
-mod app;
-
-use app::*;
+use client::app::App;
 use leptos::*;
-
-mod contexts;
-mod components;
 
 fn main() {
     mount_to_body(|| {
