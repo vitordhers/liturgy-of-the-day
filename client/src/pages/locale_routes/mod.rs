@@ -53,7 +53,7 @@ pub fn LocaleRoutes(#[prop(default = String::from("en_US"))] locale: String) -> 
 #[component(transparent)]
 fn TestTransparent() -> impl IntoView {
     view! {
-        <Route path="/" view=|| view! {<p>this is useless</p>}>
+        <Route path="/" view=|| view! {<div> <p>this is useless</p> <Outlet /> </div>}>
             <Route path="test" view =|| view! {<span>TEST CHILD #2</span>} />
             <Route path="" view =|| view! {<span>TEST CHILD #1</span>} />
         </Route>
