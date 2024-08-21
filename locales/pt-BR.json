@@ -1,0 +1,32 @@
+{
+  "routes": {
+    "home": "Início",
+    "settings": "Configurações",
+    "curation": "Curadoria",
+    "notifications": "Notificações",
+    "not_found": "Não encontrado"
+  },
+  "common": {
+    "select_one": "Selecionar",
+    "not_found": "A página não pôde ser encontrada",
+    "loading": "Carregando"
+  },
+  "set_locale": "🇧🇷 Português (Brasil)",
+  "settings": {
+    "settings": "Configurações",
+    "locale_settings": "🌎 Configurações de Localização",
+    "select_language": "👅 Escolha o idioma",
+    "select_liturgical_calendar": "🗓️ Escolha o Calendário Litúrgico",
+    "calendars": {
+      "br": "🇧🇷 Calendário Litúrigico Brasileiro",
+      "roman": "🇻🇦 Calendário Romano Geral",
+      "us": "🇺🇸 Calendário Litúrgico Americano"
+    },
+    "select_timezone": "🌐 Escolha o fuso-horário",
+    "theme_settings": "🎨 Configurações de Tema",
+    "use_dark_mode": "Usar modo escuro",
+    "use_light_mode": "Usar modo claro",
+    "use_gold_instead_of_white": "🟡 Usar dourado em vez de branco para as comemorações respectivas",
+    "use_white_instead_of_gold": "⚪ Usar branco em vez de dourado para as comemorações respectivas"
+  }
+}

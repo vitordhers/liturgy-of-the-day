@@ -1,0 +1,32 @@
+{
+  "routes": {
+    "home": "Home",
+    "settings": "Settings",
+    "curation": "Curation",
+    "notifications": "Notifications",
+    "not_found": "Not Found"
+  },
+  "common": {
+    "select_one": "Select one",
+    "not_found": "Page couldn't be found",
+    "loading": "Loading"
+  },
+  "set_locale": "🇺🇸 English (USA)",
+  "settings": {
+    "settings": "Settings",
+    "locale_settings": "🌎 Locale Settings",
+    "select_language": "👅 Select Language",
+    "select_liturgical_calendar": "🗓️ Select Liturgical Calendar",
+    "calendars": {
+      "br": "🇧🇷 Brazilian Liturgical Calendar",
+      "roman": "🇻🇦 General Roman Calendar",
+      "us": "🇺🇸 American Liturgical Calendar"
+    },
+    "select_timezone": "🌐 Select Timezone",
+    "theme_settings": "🎨 Theme Settings",
+    "use_dark_mode": "Use Dark Mode",
+    "use_light_mode": "Use Light Mode",
+    "use_gold_instead_of_white": "🟡 Use Gold instead of White for respective commemorations",
+    "use_white_instead_of_gold": "⚪ Use White instead of Gold for respective commemorations"
+  }
+}

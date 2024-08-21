@@ -1,13 +1,14 @@
 {
-  "name": "Liturgy of the Day",
+  "name": "angus-daily",
   "version": "1.0.0",
-  "description": "Liturgy of the Day",
+  "description": "Agnus Daily - Gloria Patri, et Filio, et Spiritui Sancto, sicut erat in principio, et nunc, et semper, et in sæcula sæculorum",
   "author": "",
   "license": "ISC",
   "scripts": {
-    "tailwind:build": "npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind.css",
+    "tailwind:build": "npx tailwindcss -i ./assets/css/tailwind-input.css -o ./assets/css/tailwind.css --watch",
     "styles:build": "npx sass --no-source-map ./assets/css/styles.scss ./assets/css/styles.css",
-    "styles:build:watch": "npx sass --watch --no-source-map ./assets/css/styles.scss ./assets/css/styles.css"
+    "styles:build:watch": "npx sass --watch --no-source-map ./assets/css/styles.scss ./assets/css/styles.css",
+    "stupidcss": "npx sass --no-source-map ./assets/css/styles.scss ./assets/css/styles.css"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",

@@ -12,3 +12,5 @@ serde = { workspace = true }
 serde_json = { workspace = true }
 strum = { version = "0.26.2" }
 strum_macros = { version = "0.26.2" }
+enums = { workspace = true }
+surrealdb = { wprkspace = true }

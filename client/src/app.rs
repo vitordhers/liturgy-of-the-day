@@ -1,25 +1,19 @@
-use crate::pages::home::Home;
-use crate::pages::notifications::Notifications;
-use crate::pages::settings::Settings;
-use crate::pages::shop::Shop;
-use crate::templates::nav_layout::NavLayout;
-use crate::{i18n::provide_i18n_context, pages::locale_routes::LocaleRoutes};
-use leptos::logging::log;
-// use leptos::leptos_dom::logging::console_log;
-use leptos::*;
+use crate::contexts::state::ThemeStateCtx;
+use crate::i18n::Locale;
+use crate::{
+    contexts::{config::provide_config_context, state::provide_state_context},
+    i18n::provide_i18n_context,
+    pages::{curation::Curation, home::Home, notifications::Notifications, settings::Settings},
+    templates::{locale_routes::LocaleRoutesLayout, nav_layout::NavLayout},
+};
+use leptos::{logging::log, *};
 use leptos_meta::*;
 use leptos_router::*;
 
-// use leptos_router::*;
-
-use config::{constants::AVAILABLE_LANGUAGES, Config};
 // use leptos::leptos_dom::ev::SubmitEvent;
 use serde::{Deserialize, Serialize};
 // use serde_wasm_bindgen::to_value;
 use wasm_bindgen::prelude::*;
-
-use crate::contexts::{provide_config_context_slices, PlatformConfigCtx, ThemeCtx};
-// use enums::LiturgicalColor;
 
 #[wasm_bindgen]
 extern "C" {
@@ -34,9 +28,11 @@ struct GreetArgs<'a> {
 
 #[component]
 pub fn App() -> impl IntoView {
+    provide_config_context();
+    provide_state_context();
     provide_meta_context();
     provide_i18n_context();
-    provide_config_context_slices(Config::default());
+    let theme_ctx = expect_context::<ThemeStateCtx>();
 
     // let current_locale = i18n.get_locale();
 
@@ -65,52 +61,40 @@ pub fn App() -> impl IntoView {
     //     });
     // };
 
-    // let theme_ctx = expect_context::<ThemeCtx>().0;
-    let theme_color = "purple";
-    //  move || match theme_ctx.0.get() {
-    //     LiturgicalColor::Green => "green",
-    //     LiturgicalColor::Purple => "purple",
-    //     LiturgicalColor::Rose => "rose",
-    //     LiturgicalColor::Red => "red",
-    //     LiturgicalColor::Gold => "gold",
-    //     LiturgicalColor::Black => "black"
-    // };
-    // let platform_ctx = expect_context::<PlatformConfigCtx>().0;
-
-    // let routes_view = view! {
-    //
-    // };
-    // log!("FRAGMENT INTO VIEW {:?}", routes_view.clone().into_view().render_to_string());
-
-    let single_route = view! {
-        <Route path="" view=NavLayout ssr=SsrMode::PartiallyBlocked>
-            <Html lang="en-US" />
-            <Route path="shop" view=Shop />
-            <Route path="" view=Home />
-        </Route>
-    };
-
-    if cfg!(feature = "ssr") {
-        log!("SINGLE ROUTE => {:?}", single_route.render_to_string());
-    }
-
     view! {
-        <Html
-            attr:data-theme=theme_color
-        />
-        <Stylesheet id="leptos" href="assets/css/styles.css"/>
+        <Transition>
+            <Html
+                attr:data-theme=move||theme_ctx.current_theme.get()
+            />
+        </Transition>
+        
+        <Stylesheet id="leptos" href="/assets/css/styles.css" />
 
         <main class="relative">
             <Router>
                 <Routes>
-                    <LocaleRoutes locale=String::from("en_US") />
-                    // <Route path="/" view=NavLayout ssr=SsrMode::PartiallyBlocked>
-                    //     <Html lang="en-US" />
-                    //     <Route path="shop" view=Shop />
-                    //     <Route path="" view=Home />
-                    // </Route>
-                    // <Route path="/settings" view=Settings />
-                    // <Route path="/notifications" view=Notifications />
+                    <Route path="/" view=move || view!{<LocaleRoutesLayout locale=Locale::en_US />}>
+                        <Route path="/" view=move || view!{<NavLayout />} >
+                            <Route path="/" view=|| view!{<Home />} />
+                            <Route path="/curation" view=|| view!{<Curation />} />
+                            <Route path="/*any" view=|| view!{<Redirect path="/" />} />
+                        </Route>
+                        <Route path="/" view=move || view!{<NavLayout use_bottom_nav=false use_top_back_nav=true  />} >
+                            <Route path="/settings" view=|| view!{<Settings />} />
+                            <Route path="/notifications" view=|| view!{<Notifications />} />
+                        </Route>
+                    </Route>
+                    <Route path="/pt-BR" view=move || view! {<LocaleRoutesLayout locale=Locale::pt_BR />} data=||Locale::pt_BR >
+                        <Route path="/" view=|| view! {<NavLayout locale=Locale::pt_BR />} >
+                            <Route path="/" view=|| view! {<Home locale=Locale::pt_BR />} />
+                            <Route path="/curadoria" view=|| view! {<Curation locale=Locale::pt_BR />} />
+                            <Route path="/*any" view=|| view! {<Redirect path="/pt-BR" />} />
+                        </Route>
+                        <Route path="/" view=move || view! {<NavLayout use_bottom_nav=false use_top_back_nav=true locale=Locale::pt_BR />} >
+                            <Route path="/configuracoes" view=|| view! {<Settings locale=Locale::pt_BR />} />
+                            <Route path="/notificacoes" view=|| view!{<Notifications locale=Locale::pt_BR />} />
+                        </Route>
+                    </Route>
                 </Routes>
             </Router>
         </main>

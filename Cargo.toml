@@ -1,6 +1,6 @@
 [workspace]
 members = ["src-tauri", "ssr", "csr"]
-resolver = "1"
+resolver = "2"
 
 [workspace.package]
 name = "liturgy-of-the-day"
@@ -11,16 +11,27 @@ edition = "2021"
 version = "0.0.0"
 
 [workspace.dependencies]
-wasm-bindgen = { version = "0.2.92", features = ["serde-serialize"] }
+wasm-bindgen = { version = "0.2.92" }
 wasm-bindgen-futures = { version = "0.4" }
-js-sys = "0.3"
+js-sys = "0.3.69"
 serde-wasm-bindgen = "0.6"
 console_error_panic_hook = "0.1.7"
-chrono = "0.4.34"
+chrono = { version = "0.4.31", features = ["serde"] }
 leptos = { version = "0.6.11", features = [] }
 leptos_meta = { version = "0.6.11", features = [] }
 leptos_router = { version = "0.6.11", features = [] }
 leptos_i18n = { version = "0.3.3" }
+surrealdb = { version = "1.5.1" }
+dotenv = { version = "0.15.0" }
+tokio = { version = "1.34" }
+reqwest = { version = "0.12.5" }
+
+# check this
+ron = "0.8.0"
+csv = "1.2.2"
+# futures = "0.3.28"
+serde-xml-rs = "0.6.0"
+html-escape = "0.2.13"
 
 
 [workspace.dependencies.tauri]
@@ -40,8 +51,39 @@ version = "1.0.114"
 version = "0.11.0"
 features = ["file", "futures"]
 
+[workspace.dependencies.web-sys]
+version = "0.3.69"
+features = [
+    "AudioTrack",
+    "AudioTrackList",
+    "MediaSource",
+    "MediaSourceReadyState",
+    "SourceBufferList",
+    "SourceBuffer",
+    "DataTransfer",
+    "Navigator",
+    "HtmlAudioElement",
+    "HtmlDivElement",
+    "HtmlMediaElement",
+    "HtmlVideoElement",
+    "MouseEvent",
+    "TouchEvent",
+    "TouchList",
+    "Touch",
+    "Window",
+    "ProgressEvent",
+    "MediaSource",
+    "TextTrack",
+    "TextTrackMode",
+    "TextTrackList",
+]
+
+[workspace.dependencies.db]
+path = "db"
+
 [workspace.dependencies.client]
 path = "client"
+
 
 [workspace.dependencies.config]
 path = "shared/config"
@@ -55,11 +97,16 @@ path = "shared/enums"
 [workspace.dependencies.utils]
 path = "shared/utils"
 
-[workspace.dependencies.liturgy_of_the_day_error]
+[workspace.dependencies.agnus_daily_error]
 path = "shared/error"
+
+[workspace.dependencies.invidious]
+path = "shared/invidious"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [workspace.metadata.scripts]
 leptos-fmt = "leptosfmt ./client/src/*.rs"
-serve-web-dev = "trunk serve"
-serve-desktop-dev = "cargo tauri dev"
+serve-csr = "trunk serve"
+serve-ssr = "cargo leptos watch"
+serve-desktop = "cargo tauri dev"

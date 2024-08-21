@@ -9,5 +9,7 @@ edition.workspace = true
 [dependencies]
 serde = { workspace = true }
 serde_json = { workspace = true }
+chrono = { workspace = true }
+agnus_daily_error = { workspace = true }
 strum = { version = "0.26.2" }
 strum_macros = { version = "0.26.2" }

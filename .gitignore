@@ -9,3 +9,5 @@ client/src/css/styles.css
 .vscode/
 cheat-sheets
 csr/dist
+db/data
+.env

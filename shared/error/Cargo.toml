@@ -1,5 +1,5 @@
 [package]
-name = "liturgy_of_the_day_error"
+name = "agnus_daily_error"
 version.workspace = true
 authors.workspace = true
 description.workspace = true
@@ -14,3 +14,7 @@ serde_json = { workspace = true }
 gloo = { workspace = true }
 wasm-bindgen = { workspace = true }
 js-sys = { workspace = true }
+surrealdb = { workspace = true }
+strum = { version = "0.26.2" }
+reqwest = { workspace = true }
+leptos = { workspace = true }

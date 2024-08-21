@@ -1,3 +1,10 @@
-mod config;
+mod player;
 
-pub use config::{provide_config_context_slices, ThemeCtx, PlatformConfigCtx, LocaleConfigCtx};
+pub mod config;
+pub mod state;
+
+// pub mod invidious;
+// pub mod liturgy;
+// pub mod navigation;
+// pub mod theme;
+pub use player::{PlaybackState, PlayerState, PlayerStyle};

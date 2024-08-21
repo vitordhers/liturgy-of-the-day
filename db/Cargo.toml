@@ -1,0 +1,17 @@
+[package]
+name = "db"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+structs = { workspace = true }
+surrealdb = { workspace = true }
+dotenv = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+agnus_daily_error = { workspace = true }
+enums = { workspace = true }
